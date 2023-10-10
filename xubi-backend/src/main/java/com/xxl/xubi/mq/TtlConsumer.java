@@ -9,6 +9,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 队列消息过期机制-消费者
+ */
 public class TtlConsumer {
 
     private final static String QUEUE_NAME = "ttl_queue";
@@ -16,7 +19,9 @@ public class TtlConsumer {
     public static void main(String[] argv) throws Exception {
         // 创建连接
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("192.168.100.109");
+        factory.setUsername("admin");
+        factory.setPassword("admin");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 

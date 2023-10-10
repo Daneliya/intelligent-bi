@@ -8,6 +8,9 @@ import com.rabbitmq.client.DeliverCallback;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 死信队列消费者
+ */
 public class DlxDirectConsumer {
 
     private static final String DEAD_EXCHANGE_NAME = "dlx-direct-exchange";
@@ -16,7 +19,9 @@ public class DlxDirectConsumer {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("192.168.100.109");
+        factory.setUsername("admin");
+        factory.setPassword("admin");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         channel.exchangeDeclare(WORK_EXCHANGE_NAME, "direct");

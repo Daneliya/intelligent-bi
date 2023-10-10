@@ -7,6 +7,9 @@ import com.rabbitmq.client.DeliverCallback;
 
 import java.util.Scanner;
 
+/**
+ * 死信队列生产者
+ */
 public class DlxDirectProducer {
 
     private static final String DEAD_EXCHANGE_NAME = "dlx-direct-exchange";
@@ -15,7 +18,9 @@ public class DlxDirectProducer {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("192.168.100.109");
+        factory.setUsername("admin");
+        factory.setPassword("admin");
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
             // 声明死信交换机
