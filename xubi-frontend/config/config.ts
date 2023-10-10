@@ -73,7 +73,7 @@ export default defineConfig({
    * @name layout 插件
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: '鱼智能 BI',
+  title: 'XU BI',
   layout: {
     locale: true,
     ...defaultSettings,

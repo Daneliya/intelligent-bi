@@ -20,7 +20,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/xubi
     username: root
-    password: 123456
+    password: xxl666
   # Redis 配置
   # todo 需替换配置，然后取消注释
   redis:
@@ -40,10 +40,10 @@ spring:
       # 大小限制
       max-file-size: 10MB
   rabbitmq:
-    host: localhost
+    host: 192.168.100.109
     port: 5672
-    password: guest
-    username: guest
+    password: admin
+    username: admin
 server:
   address: 0.0.0.0
   port: 8080
@@ -94,5 +94,5 @@ cos:
 # 鱼聪明 AI 配置（https://yucongming.com/）
 yuapi:
   client:
-    access-key: 替换为你自己的 access-key
-    secret-key: 替换为你自己的 secret-key
+    access-key: d54wgf3f9grceuq6spqi116hvt1sfv6f
+    secret-key: klwc8si9tyra9l4wdenc52u18as7o50r
