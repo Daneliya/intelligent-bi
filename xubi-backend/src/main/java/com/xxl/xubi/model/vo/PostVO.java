@@ -3,16 +3,15 @@ package com.xxl.xubi.model.vo;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.xxl.xubi.model.entity.Post;
-import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
 /**
  * 帖子视图
- *
-
  */
 @Data
 public class PostVO implements Serializable {

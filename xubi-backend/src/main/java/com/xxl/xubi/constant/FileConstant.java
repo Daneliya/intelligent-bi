@@ -2,8 +2,6 @@ package com.xxl.xubi.constant;
 
 /**
  * 文件常量
- *
-
  */
 public interface FileConstant {
 

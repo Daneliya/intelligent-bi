@@ -15,13 +15,13 @@ public class BiInitMain {
             factory.setHost("localhost");
             Connection connection = factory.newConnection();
             Channel channel = connection.createChannel();
-            String EXCHANGE_NAME =  BiMqConstant.BI_EXCHANGE_NAME;
+            String EXCHANGE_NAME = BiMqConstant.BI_EXCHANGE_NAME;
             channel.exchangeDeclare(EXCHANGE_NAME, "direct");
 
             // 创建队列，随机分配一个队列名称
             String queueName = BiMqConstant.BI_QUEUE_NAME;
             channel.queueDeclare(queueName, true, false, false, null);
-            channel.queueBind(queueName, EXCHANGE_NAME,  BiMqConstant.BI_ROUTING_KEY);
+            channel.queueBind(queueName, EXCHANGE_NAME, BiMqConstant.BI_ROUTING_KEY);
         } catch (Exception e) {
 
         }

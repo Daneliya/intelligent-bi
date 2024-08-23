@@ -6,8 +6,6 @@ import java.io.Serializable;
 
 /**
  * 创建请求
- *
-
  */
 @Data
 public class ChartAddRequest implements Serializable {

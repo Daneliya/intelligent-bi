@@ -6,14 +6,12 @@ import com.xxl.xubi.model.dto.user.UserQueryRequest;
 import com.xxl.xubi.model.entity.User;
 import com.xxl.xubi.model.vo.LoginUserVO;
 import com.xxl.xubi.model.vo.UserVO;
-import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
-import me.chanjar.weixin.common.bean.WxOAuth2UserInfo;
+import java.util.List;
 
 /**
  * 用户服务
- *
-
  */
 public interface UserService extends IService<User> {
 

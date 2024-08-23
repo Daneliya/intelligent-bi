@@ -1,13 +1,11 @@
 package com.xxl.xubi.service;
 
-import com.xxl.xubi.model.entity.PostThumb;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xxl.xubi.model.entity.PostThumb;
 import com.xxl.xubi.model.entity.User;
 
 /**
  * 帖子点赞服务
- *
-
  */
 public interface PostThumbService extends IService<PostThumb> {
 

@@ -4,17 +4,16 @@ import com.xxl.xubi.esdao.PostEsDao;
 import com.xxl.xubi.model.dto.post.PostEsDTO;
 import com.xxl.xubi.model.entity.Post;
 import com.xxl.xubi.service.PostService;
-import java.util.List;
-import java.util.stream.Collectors;
-import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.boot.CommandLineRunner;
 
+import javax.annotation.Resource;
+import java.util.List;
+import java.util.stream.Collectors;
+
 /**
  * 全量同步帖子到 es
- *
-
  */
 // todo 取消注释开启任务
 //@Component

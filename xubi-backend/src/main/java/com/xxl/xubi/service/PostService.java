@@ -6,12 +6,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.xxl.xubi.model.dto.post.PostQueryRequest;
 import com.xxl.xubi.model.entity.Post;
 import com.xxl.xubi.model.vo.PostVO;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * 帖子服务
- *
-
  */
 public interface PostService extends IService<Post> {
 

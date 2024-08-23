@@ -1,7 +1,7 @@
 package com.xxl.xubi.mapper;
 
-import com.xxl.xubi.model.entity.Chart;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xxl.xubi.model.entity.Chart;
 
 import java.util.List;
 import java.util.Map;

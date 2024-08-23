@@ -2,14 +2,13 @@ package com.xxl.xubi.model.dto.postfavour;
 
 import com.xxl.xubi.common.PageRequest;
 import com.xxl.xubi.model.dto.post.PostQueryRequest;
-import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.io.Serializable;
+
 /**
  * 帖子收藏查询请求
- *
-
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

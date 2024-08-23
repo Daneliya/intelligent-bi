@@ -10,15 +10,14 @@ import com.xxl.xubi.model.entity.PostThumb;
 import com.xxl.xubi.model.entity.User;
 import com.xxl.xubi.service.PostService;
 import com.xxl.xubi.service.PostThumbService;
-import javax.annotation.Resource;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
+
 /**
  * 帖子点赞服务实现
- *
-
  */
 @Service
 public class PostThumbServiceImpl extends ServiceImpl<PostThumbMapper, PostThumb>

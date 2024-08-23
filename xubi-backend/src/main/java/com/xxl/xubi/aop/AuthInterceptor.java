@@ -6,8 +6,6 @@ import com.xxl.xubi.exception.BusinessException;
 import com.xxl.xubi.model.entity.User;
 import com.xxl.xubi.model.enums.UserRoleEnum;
 import com.xxl.xubi.service.UserService;
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -17,10 +15,11 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * 权限校验 AOP
- *
-
  */
 @Aspect
 @Component

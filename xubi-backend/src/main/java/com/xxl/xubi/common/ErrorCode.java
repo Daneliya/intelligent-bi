@@ -2,8 +2,6 @@ package com.xxl.xubi.common;
 
 /**
  * 自定义错误码
- *
-
  */
 public enum ErrorCode {
 

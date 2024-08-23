@@ -80,6 +80,7 @@ public class BiMessageConsumer {
 
     /**
      * 构建用户输入
+     *
      * @param chart
      * @return
      */

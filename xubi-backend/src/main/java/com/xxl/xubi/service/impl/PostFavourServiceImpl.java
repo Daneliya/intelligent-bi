@@ -13,15 +13,14 @@ import com.xxl.xubi.model.entity.PostFavour;
 import com.xxl.xubi.model.entity.User;
 import com.xxl.xubi.service.PostFavourService;
 import com.xxl.xubi.service.PostService;
-import javax.annotation.Resource;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
+
 /**
  * 帖子收藏服务实现
- *
-
  */
 @Service
 public class PostFavourServiceImpl extends ServiceImpl<PostFavourMapper, PostFavour>

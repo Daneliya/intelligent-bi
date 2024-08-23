@@ -15,13 +15,11 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 队列测试
- *
-
  */
 @RestController
 @RequestMapping("/queue")
 @Slf4j
-@Profile({ "dev", "local" })
+@Profile({"dev", "local"})
 public class QueueController {
 
     @Resource

@@ -4,6 +4,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.DeliverCallback;
+
 import java.nio.charset.StandardCharsets;
 
 public class SingleConsumer {
@@ -25,6 +26,7 @@ public class SingleConsumer {
             System.out.println(" [x] Received '" + message + "'");
         };
         // 消费消息，会持续阻塞
-        channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> { });
+        channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
+        });
     }
 }

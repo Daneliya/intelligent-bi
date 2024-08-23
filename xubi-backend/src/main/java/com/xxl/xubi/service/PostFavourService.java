@@ -10,8 +10,6 @@ import com.xxl.xubi.model.entity.User;
 
 /**
  * 帖子收藏服务
- *
-
  */
 public interface PostFavourService extends IService<PostFavour> {
 
@@ -33,7 +31,7 @@ public interface PostFavourService extends IService<PostFavour> {
      * @return
      */
     Page<Post> listFavourPostByPage(IPage<Post> page, Wrapper<Post> queryWrapper,
-            long favourUserId);
+                                    long favourUserId);
 
     /**
      * 帖子收藏（内部服务）

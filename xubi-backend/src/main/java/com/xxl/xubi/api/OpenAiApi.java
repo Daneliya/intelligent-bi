@@ -1,12 +1,6 @@
 package com.xxl.xubi.api;
 
-import cn.hutool.http.HttpRequest;
-import cn.hutool.json.JSONUtil;
-import com.xxl.xubi.exception.BusinessException;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 调用 AI 平台的示例代码

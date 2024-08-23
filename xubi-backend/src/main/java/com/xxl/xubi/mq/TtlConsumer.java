@@ -38,6 +38,7 @@ public class TtlConsumer {
             System.out.println(" [x] Received '" + message + "'");
         };
         // 消费消息，会持续阻塞
-        channel.basicConsume(QUEUE_NAME, false, deliverCallback, consumerTag -> { });
+        channel.basicConsume(QUEUE_NAME, false, deliverCallback, consumerTag -> {
+        });
     }
 }
