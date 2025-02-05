@@ -18,17 +18,21 @@ spring:
   # todo 需替换配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/intelligent_db
+#    url: jdbc:mysql://localhost:3306/intelligent_db
+#    username: root
+#    password: xxl666
+    url: jdbc:mysql://192.168.100.105:3306/intelligent_db
     username: root
-    password: xxl666
+    password: Tcmp0902
   # Redis 配置
   # todo 需替换配置，然后取消注释
   redis:
     database: 1
-    host: localhost
+#    host: localhost
+    host: 192.168.100.105
     port: 6379
     timeout: 5000
-#    password: 123456
+    password: root0903
   # Elasticsearch 配置
   # todo 需替换配置，然后取消注释
 #  elasticsearch:
@@ -41,13 +45,14 @@ spring:
       # 大小限制
       max-file-size: 10MB
   rabbitmq:
-    host: 192.168.31.137
+#    host: 192.168.31.137
+    host: 192.168.100.105
     port: 5672
     password: admin
     username: admin
 server:
   address: 0.0.0.0
-  port: 8080
+  port: 82
   servlet:
     context-path: /api
     # cookie 30 天过期
@@ -99,5 +104,7 @@ yuapi:
 #    secret-key: 替换为你自己的 secret-key
     access-key: d54wgf3f9grceuq6spqi116hvt1sfv6f
     secret-key: klwc8si9tyra9l4wdenc52u18as7o50r
-# ec098451f85f49f08f97f4a299a5a9a4
-# API KEY：sk-e9add5896dd84ba49d0f142dab6383d9
+# 阿里百炼（https://bailian.console.aliyun.com/）
+bailian:
+  appId: ec098451f85f49f08f97f4a299a5a9a4
+  apiKey: sk-e9add5896dd84ba49d0f142dab6383d9

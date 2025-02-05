@@ -130,7 +130,8 @@ export default defineConfig({
     {
       requestLibPath: "import { request } from '@umijs/max'",
       // 或者使用在线的版本
-      schemaPath: "http://localhost:8080/api/v2/api-docs",
+      schemaPath: "http://192.168.100.105:82/api/v2/api-docs",
+      // schemaPath: "http://localhost:82/api/v2/api-docs",
       projectName: 'xubi',
       // schemaPath: join(__dirname, 'oneapi.json'),
       mock: false,

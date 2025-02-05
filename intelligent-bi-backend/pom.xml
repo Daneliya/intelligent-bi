@@ -12,9 +12,9 @@
     </parent>
 
     <groupId>com.xxl</groupId>
-    <artifactId>yubi-backend</artifactId>
+    <artifactId>intelligent-bi-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>yubi-backend</name>
+    <name>intelligent-bi</name>
 
     <properties>
         <java.version>11</java.version>

@@ -25,6 +25,7 @@ public class RedissonConfig {
     public RedissonClient redissonClient() {
         Config config = new Config();
         config.useSingleServer()
+                .setPassword(password)
                 .setDatabase(database)
                 .setAddress("redis://" + host + ":" + port);
         RedissonClient redisson = Redisson.create(config);

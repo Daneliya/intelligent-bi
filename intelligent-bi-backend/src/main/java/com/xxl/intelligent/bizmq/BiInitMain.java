@@ -12,7 +12,7 @@ public class BiInitMain {
     public static void main(String[] args) {
         try {
             ConnectionFactory factory = new ConnectionFactory();
-            factory.setHost("192.168.31.137");
+            factory.setHost("192.168.100.105");
             factory.setUsername("admin");
             factory.setPassword("admin");
             Connection connection = factory.newConnection();
