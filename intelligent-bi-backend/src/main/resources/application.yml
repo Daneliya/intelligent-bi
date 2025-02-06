@@ -108,3 +108,5 @@ yuapi:
 bailian:
   appId: ec098451f85f49f08f97f4a299a5a9a4
   apiKey: sk-e9add5896dd84ba49d0f142dab6383d9
+deepSeek:
+  apiKey: sk-5b39f97595444f6cb0339e3c55bb0e76
